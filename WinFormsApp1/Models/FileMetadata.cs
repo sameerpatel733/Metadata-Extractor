@@ -39,13 +39,15 @@ namespace MetadataExtractor.Models
         public string ProductVersion { get; set; }
         public string OriginalFileName { get; set; }
         public string CopyRight { get; set; }
-        public int RowCount { get; set; }
-        public int ColumnCount { get; set; }
+        public string RowCount { get; set; }
+        public string ColumnCount { get; set; }
         public string Headers { get; set; }
-        public bool HasHeader { get; set; }
         public string Delimiter { get; set; }
         public string Encoding { get; set; }
-        public int SheetCount { get; set; }
+        public string SheetCount { get; set; }
         public string SheetNames { get; set; }
+        public string SlideCount { get; set; }
+        public string WordCount { get; set; }
+        public string CharcterCount { get; set; }
     }
 }

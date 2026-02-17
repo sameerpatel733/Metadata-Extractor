@@ -37,16 +37,20 @@
             // 
             // tbxFilepath
             // 
-            tbxFilepath.Location = new Point(31, 21);
+            tbxFilepath.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            tbxFilepath.Location = new Point(36, 21);
             tbxFilepath.Name = "tbxFilepath";
+            tbxFilepath.PlaceholderText = "Enter path here !!!";
             tbxFilepath.Size = new Size(390, 31);
             tbxFilepath.TabIndex = 0;
             // 
             // btnImport
             // 
-            btnImport.Location = new Point(545, 21);
+            btnImport.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnImport.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnImport.Location = new Point(550, 21);
             btnImport.Name = "btnImport";
-            btnImport.Size = new Size(197, 34);
+            btnImport.Size = new Size(220, 34);
             btnImport.TabIndex = 1;
             btnImport.Text = "Import File For Search";
             btnImport.UseVisualStyleBackColor = true;
@@ -54,16 +58,19 @@
             // 
             // dgvDataList
             // 
+            dgvDataList.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvDataList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDataList.Location = new Point(31, 70);
+            dgvDataList.Location = new Point(36, 61);
             dgvDataList.Name = "dgvDataList";
             dgvDataList.RowHeadersWidth = 62;
-            dgvDataList.Size = new Size(653, 323);
+            dgvDataList.Size = new Size(734, 394);
             dgvDataList.TabIndex = 3;
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(427, 21);
+            btnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnSearch.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSearch.Location = new Point(432, 21);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(112, 34);
             btnSearch.TabIndex = 4;
@@ -75,7 +82,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(805, 494);
             Controls.Add(btnSearch);
             Controls.Add(dgvDataList);
             Controls.Add(btnImport);
